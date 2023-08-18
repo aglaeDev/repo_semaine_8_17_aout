@@ -52,3 +52,14 @@ agesEntrepreneurs.forEach(entrepreneur => {
 })  
     
 console.log("agesEntrepreneurs", agesEntrepreneurs);  
+
+//alphabetical sort
+ 
+const alphaCopy = names.map(a => ({...a}))
+/*alphaCopy.forEach(entrepreneur => {
+  delete book.rented
+  delete book.id
+})*/
+const alphaSort = alphaCopy.sort((a, b) =>
+  a.last.localeCompare(b.last));
+console.log("alphaSort", alphaSort);
